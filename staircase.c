@@ -3,28 +3,27 @@
 
 int main()
 {
-    int i, j, rows;
+    int i, j, n;
 
-    /* Input rows from user */
-    printf("Enter number of rows: ");
-    scanf("%d", &rows);
+    //printf("Enter number of rows: ");
+    scanf("%d", &n);
 
-    /* Iterate through rows */
-    for(i=1; i<=rows; i++)
+
+    for(i=1; i<=n; i++)
     {
-        /* Print spaces in decreasing order of row */
-        for(j=i; j<rows; j++)
+
+        for(j=i; j<n; j++)
         {
             printf(" ");
         }
 
-        /* Print star in increasing order or row */
+
         for(j=1; j<=i; j++)
         {
             printf("#");
         }
 
-        /* Move to next line */
+
         printf("\n");
     }
 
